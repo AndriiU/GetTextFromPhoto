@@ -54,12 +54,10 @@ def save_debug_image(image, filename):
     cv2.imwrite(debug_path, image)
 
 def replace_words(text):
-    """Замінює слова 'меп' на 'мсп' та 'месет' на 'несет'"""
+    """Замінює слова 'aaa' на 'bbb' та 'ccc' на 'ddd'"""
     replacements = {
-        "меп": "мсп",
-        "вісл": "в/сл",
-        "омебр": "омcбр",
-        "мед": "мсд"
+        "aaa": "bbb",
+        "ccc": "ddd"
     }
     for old_word, new_word in replacements.items():
         text = text.replace(old_word, new_word)
